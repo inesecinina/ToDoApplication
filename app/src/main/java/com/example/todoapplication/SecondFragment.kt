@@ -12,6 +12,9 @@ import androidx.navigation.fragment.findNavController
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 class SecondFragment : Fragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,6 +29,9 @@ class SecondFragment : Fragment() {
 
         view.findViewById<Button>(R.id.go_back).setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+
+
         }
+
     }
 }

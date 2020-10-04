@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class FirstFragment : Fragment() {
+    private val events = mutableListOf(ToDoEvent)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
